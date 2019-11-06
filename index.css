@@ -1,0 +1,70 @@
+body {
+  background-image: url('https://cdn3.sportngin.com/attachments/news_article/51ba-117128631/shutterstock_549133762.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  border-radius: 50%;
+  background-color: #4CAF50; 
+  color: white;
+  cursor: pointer;
+    }
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+}
+
+h3 {
+  text-align: center;
+   text-shadow: 2px 2px 5px blue;
+} 
+h5 {
+  text-align: center;
+  text-shadow: 2px 2px 5px white;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+li:hover {
+  background-color: rgb(12, 233, 12);
+  border-radius: 24px;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 20px;
+}
+ul.header {
+  text-align: center;
+  border-radius: 24px;
+  background-color: #111;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px red;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #AAA;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.active {
+  cursor: pointer;
+  }
