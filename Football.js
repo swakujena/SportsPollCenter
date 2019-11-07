@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import SportsData from './Data.json';
+import Home from "./Home";
+
 
 class Football extends Component {
+  
   handleonClick = ()=> {
-     console.log('Vote Casted:');
+    console.log('Vote Casted');
+    window.location = '/auth';
   }
 	render() {
 		return (
@@ -14,7 +18,7 @@ class Football extends Component {
          <h2>{dataItem.homeName}</h2>
          <h3>({dataItem.awayName})</h3>
          <h5>{dataItem.sport}</h5>
-         <button onClick= {(e) => this.handleonClick(e)}> rösta </button>
+         <button onClick={this.handleonClick}> rösta </button>
          </div>
         })}
       </div>
