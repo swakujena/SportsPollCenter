@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import SportsData from './Data.json';
  
 class Tennis extends Component {
+   handleonClick = () => {
+  localStorage.setItem(' ')}; 
+  componentDidMount() {
+  const vote = localStorage.getItem(' ') === ' ';
+   }
 	render() {
 		return (
       <div >
