@@ -3,7 +3,8 @@ import SportsData from './Data.json';
 
 class Snooker extends Component {
   handleonClick = ()=> {
-     console.log('Vote Casted:', this);
+     console.log('Vote Casted');
+     
   }
 	render() {
 		return (
