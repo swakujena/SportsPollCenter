@@ -7,7 +7,7 @@ import {
 import Football from "./Football";
 import Snooker from "./Snooker";
 import Tennis from "./Tennis";
-
+import Home from "./Home";
 
 
  
@@ -16,14 +16,16 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1>Welcome to Sports Poll Center</h1>
+          <h1 class="glow">Welcome to Sports Poll Center</h1>
           <ul className="header">
-            <li><NavLink exact to="/">Football</NavLink></li>
+            <li><NavLink exact to="/">Home</NavLink></li>          
+            <li><NavLink to="/football">Football</NavLink></li>
             <li><NavLink to="/snooker">Snooker</NavLink></li>
             <li><NavLink to="/tennis">Tennis</NavLink></li>
           </ul>
           <div className="content">
-            <Route exact path="/" component={Football}/>
+            <Route exact path="/" component={Home}/>
+            <Route path="/football" component={Football}/>
             <Route path="/snooker" component={Snooker}/>
             <Route path="/tennis" component={Tennis}/>
           </div>

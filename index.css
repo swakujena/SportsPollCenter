@@ -20,6 +20,10 @@ h1 {
   text-shadow: 2px 2px 5px red;
 }
 
+h2 {
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+}
 h3 {
   text-align: center;
    text-shadow: 2px 2px 5px blue;
@@ -55,9 +59,11 @@ ul.header li a {
   display: inline-block;
 }
 .content {
-  background-color: #AAA;
+  background-size: 50% ;
+  border-radius: 50%;
+  background-color:rgb(241, 185, 138);
   padding: 20px;
-}
+  }
 .content h2 {
   padding: 0;
   margin: 0;
@@ -68,3 +74,23 @@ ul.header li a {
 .active {
   cursor: pointer;
   }
+
+
+  .glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
