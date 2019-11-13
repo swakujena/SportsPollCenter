@@ -5,7 +5,7 @@ class Voted extends Component {
 	render() {
 		return (
         <div>
-          <h1><marquee behavior="alternate">YOU HAVE VOTED</marquee></h1>
+          <h1>YOU HAVE VOTED</h1>
         </div>
        )
     }

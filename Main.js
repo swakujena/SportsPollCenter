@@ -21,12 +21,14 @@ class Main extends Component {
             <li><NavLink to="/football">Football</NavLink></li>
             <li><NavLink to="/snooker">Snooker</NavLink></li>
             <li><NavLink to="/tennis">Tennis</NavLink></li>
+            <li><NavLink to="/voted">Poll</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/football" component={Football}/>
             <Route path="/snooker" component={Snooker}/>
             <Route path="/tennis" component={Tennis}/>
+            <Route path="/voted" component={Voted}/>
           </div>
         </div>
          </HashRouter>

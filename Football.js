@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 import SportsData from './Data.json';
 import Home from "./Home";
+import {
+  Route,
+  Router,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
+import Voted from "./Voted";
 
 
 class Football extends Component {
   
   handleonClick = ()=> {
     console.log('Vote Casted');
-    window.location = '/auth';
+   this.props.history.push("/voted"); 
   }
 	render() {
 		return (
@@ -18,7 +25,8 @@ class Football extends Component {
          <h2>{dataItem.homeName}</h2>
          <h3>({dataItem.awayName})</h3>
          <h5>{dataItem.sport}</h5>
-         <button onClick={this.handleonClick}> rösta </button>
+         <button onClick={this.handleonClick}>rösta</button>
+         <Route path = "/voted" component={Voted}/>
          </div>
         })}
       </div>
