@@ -8,8 +8,7 @@ import Football from "./Football";
 import Snooker from "./Snooker";
 import Tennis from "./Tennis";
 import Home from "./Home";
-
-
+import Voted from "./Voted";
  
 class Main extends Component {
   render() {
