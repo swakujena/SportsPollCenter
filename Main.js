@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   Route,
   NavLink,
-  HashRouter
+  BrowserRouter
 } from "react-router-dom";
 import Football from "./Football";
 import Snooker from "./Snooker";
@@ -13,7 +13,7 @@ import Voted from "./Voted";
 class Main extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <h1 className="glow">Welcome to Sports Poll Center</h1>
           <ul className="header">
@@ -31,7 +31,7 @@ class Main extends Component {
             <Route path="/voted" component={Voted}/>
           </div>
         </div>
-         </HashRouter>
+         </BrowserRouter>
     );
   }
 }
