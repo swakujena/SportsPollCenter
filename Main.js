@@ -15,7 +15,7 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1 class="glow">Welcome to Sports Poll Center</h1>
+          <h1 className="glow">Welcome to Sports Poll Center</h1>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>          
             <li><NavLink to="/football">Football</NavLink></li>
