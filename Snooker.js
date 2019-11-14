@@ -21,7 +21,8 @@ class Snooker extends Component {
       <div >
         {SportsData.map((dataItem, index) => {
          if (dataItem.sport === "SNOOKER") 
-        return <div>
+        return 
+        <div key = {SportsData.id} >
          <h2>{dataItem.homeName}</h2>
          <h3>({dataItem.awayName})</h3>
          <h5>{dataItem.sport}</h5>
