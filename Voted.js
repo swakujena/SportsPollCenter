@@ -16,7 +16,6 @@ class Voted extends Component {
         <div>
           <h1>YOU HAVE VOTED</h1>
           <button onClick={this.handleClick}>Check Polls</button>
-
         </div>
        )
     }

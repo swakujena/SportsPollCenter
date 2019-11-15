@@ -5,10 +5,11 @@ import Voted from "./Voted";
 
 
 class Football extends Component {
-  
-  handleonClick = ()=> {
+   
+  handleClick = ()=> {
     console.log('Vote Casted');
    this.props.history.push("/voted"); 
+   localStorage.setItem('myPoll', JSON.stringify (SportsData));
   }
 	render() {
 		return (
@@ -20,7 +21,7 @@ class Football extends Component {
          <h2>{dataItem.homeName}</h2>
          <h3>({dataItem.awayName})</h3>
          <h5>{dataItem.sport}</h5>
-         <button onClick={this.handleonClick}>rösta</button>
+         <button onClick={this.handleClick}>rösta</button>
          </div>
          )
         })}
