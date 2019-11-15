@@ -5,10 +5,11 @@ import Voted from "./Voted";
 
 
 class Snooker extends Component {
-  
+   
   handleClick = ()=> {
     console.log('Vote Casted');
    this.props.history.push("/voted"); 
+   localStorage.setItem('myPoll', JSON.stringify (SportsData));
   }
 	render() {
 		return (
